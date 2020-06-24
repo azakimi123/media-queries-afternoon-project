@@ -26,7 +26,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-left: 50px;
+  padding-left: 200px;
 }
 
 .desktop-menu {
@@ -36,7 +36,7 @@ nav {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding-right: 100px;
+  padding-right: 200px;
 }
 
 .dropdown {
@@ -47,7 +47,43 @@ nav {
   display: none;
 }
 
-/* @media(max-width: 984px) {
+.main-container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* background: blue; */
+}
+
+h1 {
+  font-size: 85px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  font-family: droid serif;
+  margin-bottom: 0px;
+}
+
+.button-1 {
+  height: 75px;
+  width: 250px;
+  background: rgb(255, 206, 72);
+  border-radius: 7%;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  border: none;
+}
+
+@media(max-width: 984px) {
   .desktop-menu{
     display: none;
   }
@@ -64,11 +100,9 @@ nav {
     width: 150px;
     height: 50px;
     display: flex;
-    margin: 200px;
     position: fixed;
     top: 20px;
-    left: 200px;
-    margin: 0px;
+    right: 650px;
   }
 
   .dropdown {
@@ -85,6 +119,7 @@ nav {
     left: 750px;
   }
 
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -93,9 +128,9 @@ nav {
     background: rgb(34, 34, 34);
     color: white;
     box-sizing: border-box;
-    margin-top: 266px;
   }
-} */
+
+}
 
 /* .image {
   width: 50px;
