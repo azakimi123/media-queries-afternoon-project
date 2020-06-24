@@ -2,37 +2,115 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+nav {
+  width: 100vw;
+  height: 100px;
+  display:flex;
+  justify-content: space-between ;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* position: fixed; */
+}
+
+.top-container {
+  width: 100vw;
+  height: 800px;
+  background-image: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
+  background-size: cover;
+}
+.logo {
+  width: 200px;
+  height: 50px;
+  /* background: red; */
+  display: flex;
+  margin: 200px;
+  position: fixed;
+  top: 25px;
+  left: 200px;
+  margin: 0px;
+}
+
+.desktop-menu {
+  width: 500px;
+  height: 50px;
+  /* background: red; */
   color: white;
+  display: flex;
+  justify-content: space-between;
+  /* box-sizing: border-box; */
+  position: fixed;
+  right: 100px;
+  top: 10px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mobile-menu {
+  display: none;
+}
+
+@media(max-width: 984px) {
+  .desktop-menu{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  nav {
+    width: 100vw;
+    height: 40px;
+    background: rgb(34, 34, 34);
+    display:flex;
+    justify-content: space-between ;
+    align-items: center;
+    /* position: fixed; */
+  }
+  .logo {
+    width: 150px;
+    height: 50px;
+    /* background: red; */
+    display: flex;
+    margin: 200px;
+    position: fixed;
+    top: 20px;
+    left: 200px;
+    margin: 0px;
+  }
+
+  .dropdown {
+    width: 90px;
+    height: 40px;
+    border-radius: 10%;
+    background: rgb(255, 206, 72);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 750px;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 240px;
+    background: rgb(34, 34, 34);
+    color: white;
+    box-sizing: border-box;
+    margin-top: 266px;
   }
 }
+
+/* .image {
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  color: white;
+} */
+
+
+
+

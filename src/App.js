@@ -1,26 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { TiThMenu } from "react-icons/ti";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dropdownView: false
+    }
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+  }
+
+
+  toggleDropdown() {
+    this.setState({dropdownView: !this.state.dropdownView});
+  }
+
+
+  render() {
+    return (
+      <div>
+        <header className='top-container'>
+        <nav>
+          <div><img className='logo'src='https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg' alt='logo'/></div>
+          <menu className='desktop-menu'>
+            <ul>SERVICES</ul>
+            <ul>PORTFOLIO</ul>
+            <ul>ABOUT</ul>
+            <ul>TEAM</ul>
+            <ul>CONTACT</ul>
+          </menu>
+        </nav>
+        <nav className='dropdown-nav'>
+          <div className='dropdown' onClick={this.toggleDropdown}>MENU < TiThMenu className='menu-icon'/></div>
+          {this.state.dropdownView
+          ? (
+            <menu className='mobile-menu'>
+              <ul>SERVICES</ul>
+              <ul>PORTFOLIO</ul>
+              <ul>ABOUT</ul>
+              <ul>TEAM</ul>
+              <ul>CONTACT</ul>
+            </menu>
+          )
+          : null}
+        </nav>
+        </header>
+
+      </div>
+    )
+  }
 }
 
 export default App;
