@@ -35,6 +35,7 @@ class App extends Component {
           </menu>
         </nav>
         <nav className='dropdown-nav'>
+        <div><img className='mobile-logo'src='https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg' alt='logo'/></div>
           <div className='dropdown' onClick={this.toggleDropdown}>MENU < TiThMenu className='menu-icon'/></div>
           {this.state.dropdownView
           ? (
@@ -56,6 +57,9 @@ class App extends Component {
           <button className='button-1'>TELL ME MORE</button>
         </section>
         </header>
+        <section className='service-section'>
+          <h3 className='second-heading'>SERVICES</h3>
+        </section>
 
 
       </div>
