@@ -98,21 +98,23 @@ nav {
   }
 
 
-  nav {
+  .dropdown-nav {
     width: 100vw;
-    height: 40px;
+    height: 70px;
     background: rgb(34, 34, 34);
     display:flex;
     justify-content: space-between ;
     align-items: center;
+    position: fixed;
+    top: 0px;
 
   }
-  .logo {
+  .mobile-logo {
     width: 150px;
     height: 50px;
     display: flex;
     position: fixed;
-    top: 20px;
+    top:10px;
     right: 650px;
   }
 
@@ -126,7 +128,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 700px;
   }
 
@@ -157,7 +159,7 @@ nav {
 }
 
 @media(max-width: 807px) {
-  .logo {
+  .mobile-logo {
     right: 475px;
   }
 
@@ -179,7 +181,27 @@ nav {
   }
 
   .main-container {
+    height: 60vh;
     justify-content: center;
+  }
+
+  .top-container {
+    width: 100vw;
+    height: 500px;
+  }
+
+  .service-section{
+    /* background: blue; */
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* margin-top: 35px; */
+  }
+  .second-heading {
+    font-size: 45px;
+
   }
 
 }
