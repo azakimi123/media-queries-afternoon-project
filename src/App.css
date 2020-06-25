@@ -156,6 +156,33 @@ nav {
 
 }
 
+@media(max-width: 807px) {
+  .logo {
+    right: 475px;
+  }
+
+  .dropdown {
+    left: 535px;
+  }
+
+  .mobile-heading1 {
+    font-size: 50px;
+  }
+
+  .sub-heading {
+    font-size: 30px;
+  }
+
+  .button-1 {
+    height: 55px;
+    width: 230px;
+  }
+
+  .main-container {
+    justify-content: center;
+  }
+
+}
 
 
 
