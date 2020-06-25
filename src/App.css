@@ -7,9 +7,8 @@ nav {
   width: 100vw;
   height: 100px;
   display:flex;
-  justify-content: space-between ;
+  justify-content: space-around ;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .top-container {
@@ -17,6 +16,8 @@ nav {
   height: 800px;
   background-image: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
   background-size: cover;
+  overflow: hidden;
+
 }
 .logo {
   width: 200px;
@@ -49,7 +50,7 @@ nav {
 
 .main-container {
   width: 100vw;
-  height: 50vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,10 +59,14 @@ nav {
   /* background: blue; */
 }
 
-h1 {
-  font-size: 85px;
+.desktop-heading {
+  font-size: 75px;
   margin-top: 25px;
   margin-bottom: 40px;
+}
+
+.mobile-heading1{
+  display: none;
 }
 
 .sub-heading {
@@ -87,6 +92,12 @@ h1 {
   .desktop-menu{
     display: none;
   }
+
+  .desktop-heading{
+    display: none;
+  }
+
+
   nav {
     width: 100vw;
     height: 40px;
@@ -116,7 +127,7 @@ h1 {
     align-items: center;
     position: fixed;
     top: 20px;
-    left: 750px;
+    left: 700px;
   }
 
 
@@ -128,16 +139,23 @@ h1 {
     background: rgb(34, 34, 34);
     color: white;
     box-sizing: border-box;
+    position: fixed;
+    top: 50px;
+  }
+
+  .main-container{
+    justify-content: flex-end;
+  }
+  .mobile-heading1 {
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
 
 }
 
-/* .image {
-  width: 50px;
-  height: 50px;
-  background: yellow;
-  color: white;
-} */
 
 
 

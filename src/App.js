@@ -50,7 +50,9 @@ class App extends Component {
         </nav>
         <section className='main-container'>
           <p className='sub-heading'>Welcome To Our Studio!</p>
-          <h1>IT'S NICE TO MEET YOU</h1>
+          <h1 className="desktop-heading">IT'S NICE TO MEET YOU</h1>
+          <h1 className="mobile-heading1">IT'S NICE TO MEET</h1>
+          <h1 className="mobile-heading1" >YOU</h1>
           <button className='button-1'>TELL ME MORE</button>
         </section>
         </header>
